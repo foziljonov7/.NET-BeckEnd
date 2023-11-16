@@ -1,4 +1,4 @@
-﻿//Qoldiqli va natural sonlar uchun ishatiladi -4 milliarddan 4 milliardgacha son qabul qiladi
+﻿//Qoldiqli va natural sonlar uchun ishatiladi -2 milliarddan 2 milliardgacha son qabul qiladi
 //float f1 = 3.14f; //f
 //Console.Write("Xushkelibsiz! radiusni kiriting: ");
 //float f2 = float.Parse(Console.ReadLine());
