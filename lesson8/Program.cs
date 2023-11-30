@@ -1,10 +1,10 @@
 ﻿//Array
-string[] fruits = { "Apple", "Banana", "percil" };
-int[] number = new int[] { 1, 2, 3, 4, 5, 6 };
-double[] d = new double[5];
+//string[] fruits = { "Apple", "Banana", "percil" };
+//int[] number = new int[] { 1, 2, 3, 4, 5, 6 };
+//double[] d = new double[5];
 
-foreach (string fruit in fruits)
-    Console.WriteLine(fruit);
+//foreach (string fruit in fruits)
+//    Console.WriteLine(fruit);
 
 
 
@@ -32,3 +32,7 @@ foreach (string fruit in fruits)
 
 //for(int i = 2; i >= 0; i--)
 //    Console.WriteLine(shaharlar[i]);
+
+
+//Homework
+
