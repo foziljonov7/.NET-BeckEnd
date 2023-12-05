@@ -71,3 +71,47 @@
 //    goto key;
 //}
 
+//array
+//1-olchamli array
+
+//int[] sonlar = new int[] { 121, 321, 98, 12, 41 }; //
+//int[] sonlar2 = { 1312, 321, 42, 91, 12 };
+//int[] sonlar3 = new int[10];
+
+
+////2-olchamli array
+//int[,] sonlar = new int[2, 4];
+//for (int i = 0; i < 2; i++)
+//{
+//    for (int n = 0; n < 4; n++)
+//    {
+//        sonlar[i, n] = int.Parse(Console.ReadLine());
+//    }
+//}
+//foreach (int k in sonlar)
+//    Console.Write(k + " ");
+
+
+
+
+//foreach (int i in sonlar)
+//{
+//    if (i < 5)
+//    {
+//        if (i < 20) continue;
+//        {
+//            Console.WriteLine(i);
+//        }
+//    }
+//    else
+//    {
+//        break;
+//    }
+//}
+
+
+//Console.WriteLine(sonlar[0, 2]);
+//Console.WriteLine(sonlar[1, 1]);
+
+
+
