@@ -2,10 +2,6 @@
 //private, public, protected
 //Metodlar
 
-//int AddNumber(int a, int b)
-//{
-//    return a + b;
-//}
 
 //var s = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 //Console.WriteLine(AddNumber(s[0], s[1]));
@@ -35,3 +31,40 @@
 //    for(int i = a; i >= 0; i--)
 //        Console.WriteLine(i);
 //}
+
+//1-misol: 1 ta int typeda kvadrat degan metod hosil qiling
+//metod int a son qabul qilsin va osha sonning kvadratini qaytarsin
+for (int i = 0; i < 5; i++)
+{
+    int a = int.Parse(Console.ReadLine());
+    string c = Console.ReadLine();
+    int b = int.Parse(Console.ReadLine());
+    if (c == "+")
+        Qoshish(a, b);
+    else if (c == "-")
+        Ayrish(a, b);
+    else if (c == "*")
+        Kopaytirish(a, b);
+    else if (c == "/")
+        Bolish(a, b);
+    else
+        Console.WriteLine("Ayhollar qanaqa!");
+}
+
+
+void Qoshish(int a, int b)
+{
+    Console.WriteLine(a + b);
+}
+void Ayrish(int a, int b)
+{
+    Console.WriteLine(a - b);
+}
+void Kopaytirish(int a, int b)
+{
+    Console.WriteLine(a * b);
+}
+void Bolish(int a, int b)
+{
+    Console.WriteLine(a / b);
+}
