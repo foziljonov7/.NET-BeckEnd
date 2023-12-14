@@ -10,24 +10,16 @@
 //}
 
 
-int k = int.Parse(Console.ReadLine());
-Kvadrat(k, out int perimetr, out int yuza, out int kub);
-Console.WriteLine(perimetr + " " + yuza + " " + kub);
+//int k = int.Parse(Console.ReadLine());
+//Kvadrat(k, out int perimetr, out int yuza, out int kub);
+//Console.WriteLine(perimetr + " " + yuza + " " + kub);
 
-static void Kvadrat(int k, out int perimetr, out int yuza, out int kub)
-{
-    perimetr = k * 4;
-    yuza = k * k;
-    kub = k * k * k;
-}
-
-
-
-
-
-
-
-
+//static void Kvadrat(int k, out int perimetr, out int yuza, out int kub)
+//{
+//    perimetr = k * 4;
+//    yuza = k * k;
+//    kub = k * k * k;
+//}
 
 //Console.WriteLine(max(s[0], s[1]));
 //Console.WriteLine(max(s[0], s[1]));
@@ -42,10 +34,12 @@ static void Kvadrat(int k, out int perimetr, out int yuza, out int kub)
 
 //static void max2(int a, int b)
 //{
-//    int max;
+//    int max = 0;
 //    if (a > b)
-//        max = a;
+//        max += a;
 //    else
-//        max = b;
+//        max += b;
+//    Console.WriteLine(max);
 //}
+//Console.WriteLine(max(20, 30));
 
