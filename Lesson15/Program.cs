@@ -1,4 +1,6 @@
 ﻿using Lesson15;
+using System.IO;
+using System;
 
 //Book book = new Book();
 //Console.WriteLine($"Id: {book.Id} Name: {book.Name}  " +
@@ -27,3 +29,4 @@
 //Console.Write("Student idsi orqali qidirish: ");
 //int studentId = int.Parse(Console.ReadLine());
 //student.GetStudentById(studentId);
+

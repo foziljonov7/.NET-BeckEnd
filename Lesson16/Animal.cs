@@ -13,7 +13,7 @@ namespace Lesson16
         public string Turi { get; set; }
 
         public void GetAnimal()
-            => Console.WriteLine($"Nomi {Nomi} turi {Turi}");
+            => Console.WriteLine($"nomi {Nomi} turi {Turi}");
 
         public void GetAnimalName(string nomi)
         {
