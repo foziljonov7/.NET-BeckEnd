@@ -15,15 +15,15 @@
 //Course course = new Course(id, name, teacher);
 //Console.WriteLine($"{course.Id}  {course.Name}  {course.Teacher}");
 
-Console.Write("Student Id sini kiriting: ");
-int id = int.Parse(Console.ReadLine());
-Console.Write("Student to'liq ismini kiriting: ");
-string fullname = Console.ReadLine();
-Console.Write("Student manzilini kiriting: ");
-string location = Console.ReadLine();
+//Console.Write("Student Id sini kiriting: ");
+//int id = int.Parse(Console.ReadLine());
+//Console.Write("Student to'liq ismini kiriting: ");
+//string fullname = Console.ReadLine();
+//Console.Write("Student manzilini kiriting: ");
+//string location = Console.ReadLine();
 
-Student student = new Student(id, fullname, location);
-student.GetStudent();
-Console.Write("Student idsi orqali qidirish: ");
-int studentId = int.Parse(Console.ReadLine());
-student.GetStudentById(studentId);
+//Student student = new Student(id, fullname, location);
+//student.GetStudent();
+//Console.Write("Student idsi orqali qidirish: ");
+//int studentId = int.Parse(Console.ReadLine());
+//student.GetStudentById(studentId);
