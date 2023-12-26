@@ -1,5 +1,7 @@
 ﻿//using Lesson16;
 
+//using Lesson16;
+
 //string nomi = Console.ReadLine();
 //string turi = Console.ReadLine();
 
