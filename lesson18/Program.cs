@@ -1,32 +1,34 @@
-﻿
-Console.WriteLine(Son.Metod(25));
+﻿using lesson18;
 
-public static class Son
-{
-    public static int Metod(int son)
-    {
-        if(son > 10 || son < 50)
-        {
-            int a = son / 5;
-            return a;
-        }
-        else
-        {
-            int k = 0;
-            for (int i = son; i > 0; i--)
-            {
-                k += i;
-            }
-            return k;
-        }
-    }
-}
+User user = new User("Ibrohim Qo'ziyev", 21, "Fergana Bogdod");
+user.GetUsers();
 
 
 
+//Console.WriteLine(Son.Metod(25));
 
+//public static class Son
+//{
+//    public static int Metod(int son)
+//    {
+//        if (son > 10 || son < 50)
+//        {
+//            int a = son / 5;
+//            return a;
+//        }
+//        else
+//        {
+//            int k = 0;
+//            for (int i = son; i > 0; i--)
+//            {
+//                k += i;
+//            }
+//            return k;
+//        }
+//    }
+//}
 
-//Console.WriteLine(Matem.PI * 3);    
+//Console.WriteLine(Matem.PI * 3);
 
 //public static class Matem
 //{
@@ -40,5 +42,7 @@ public static class Son
 //        }
 //    }
 //}
+
+
 
 
