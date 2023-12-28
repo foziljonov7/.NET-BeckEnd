@@ -1,7 +1,7 @@
-﻿using lesson18;
+﻿//using lesson18;
 
-User user = new User("Ibrohim Qo'ziyev", 21, "Fergana Bogdod");
-user.GetUsers();
+//User user = new User("Ibrohim Qo'ziyev", 21, "Fergana Bogdod");
+//user.GetUsers();
 
 
 
