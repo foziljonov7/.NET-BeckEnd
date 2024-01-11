@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson19", "Lesson19\Lesson
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vorislik", "Vorislik\Vorislik.csproj", "{02B34480-66D8-42BE-A2BA-68A993A1ED09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson20", "Lesson20\Lesson20.csproj", "{C42702E3-5E87-46A3-9D75-FECEB9A1170F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson20", "Lesson20\Lesson20.csproj", "{C42702E3-5E87-46A3-9D75-FECEB9A1170F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Override", "Override\Override.csproj", "{07AAF7A3-C074-4A9B-9F16-FB7CB4D9B3D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{C42702E3-5E87-46A3-9D75-FECEB9A1170F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42702E3-5E87-46A3-9D75-FECEB9A1170F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42702E3-5E87-46A3-9D75-FECEB9A1170F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AAF7A3-C074-4A9B-9F16-FB7CB4D9B3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AAF7A3-C074-4A9B-9F16-FB7CB4D9B3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AAF7A3-C074-4A9B-9F16-FB7CB4D9B3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AAF7A3-C074-4A9B-9F16-FB7CB4D9B3D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

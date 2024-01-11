@@ -37,10 +37,10 @@
 //}
 
 
-int a = Convert.ToInt32(Console.ReadLine());
-string a1 = Console.ReadLine();
+//int a = Convert.ToInt32(Console.ReadLine());
+//string a1 = Console.ReadLine();
 
-if (a == a1.Length)
-    Console.WriteLine(a1);
-else
-    Console.WriteLine($"text uzunligi {a1.Length} = {a} teng emass");
+//if (a == a1.Length)
+//    Console.WriteLine(a1);
+//else
+//    Console.WriteLine($"text uzunligi {a1.Length} = {a} teng emass");
