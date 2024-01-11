@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shifoxona", "Shifoxona\Shifoxona.csproj", "{D4D873B2-9F4A-438B-AF24-309AADA4AEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4D873B2-9F4A-438B-AF24-309AADA4AEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D873B2-9F4A-438B-AF24-309AADA4AEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D873B2-9F4A-438B-AF24-309AADA4AEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D873B2-9F4A-438B-AF24-309AADA4AEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F3FF995-75F6-4DCE-B549-2E930A694989}
+	EndGlobalSection
+EndGlobal
