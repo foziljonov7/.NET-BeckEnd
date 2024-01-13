@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shifoxona
+namespace Shifoxona.Models
 {
     public class Person
     {
@@ -12,7 +12,13 @@ namespace Shifoxona
         public string Fullname { get; set; }
         public string PhoneNumber { get; set; }
         public int Age { get; set; }
+        public int RoomId { get; set; }
         public string Location { get; set; }
         public string Disease { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Id} {Fullname} {PhoneNumber} {Age} {RoomId} {Location} {Disease}";
+        }
     }
 }
