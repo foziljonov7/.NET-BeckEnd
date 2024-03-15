@@ -1,4 +1,42 @@
-﻿
+﻿IDictionary<int, Person> persons = new Dictionary<int, Person>();
+
+persons.Add(1, new Person(1, "Abdulvosid Foziljonov", "+998945666964", 19));
+persons.Add(2, new Person(2, "Muhammadkarim Xolmatov", "+998909000990", 23));
+
+foreach(var person in persons)
+    Console.WriteLine(person.Value);
+
+
+
+public class Person
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string PhoneNumber { get; set; }
+    public int Age { get; set; }
+
+    public Person(
+        int id,
+        string name,
+        string phone,
+        int age)
+    {
+        Id = id;
+        Name = name;
+        PhoneNumber = phone;
+        Age = age;
+    }
+
+    public override string ToString()
+    {
+        return $"Id: {Id}, Name: {Name}, Phone number: {PhoneNumber}, Age: {Age}";
+    }
+}
+
+
+
+
+
 
 //MyDelegate myDelegate;
 //MyClass obj = new MyClass();
@@ -140,7 +178,7 @@
 //        break;
 //    }
 //}
-Console.WriteLine("Sikl yakunlandi!");
+//Console.WriteLine("Sikl yakunlandi!");
 
 
 //ICollection<int> keys = dictionary.Keys;
