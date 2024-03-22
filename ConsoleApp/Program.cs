@@ -1,35 +1,98 @@
-﻿IDictionary<int, Person> persons = new Dictionary<int, Person>();
+﻿//IDictionary<int, Person> persons = new Dictionary<int, Person>();
 
-persons.Add(1, new Person(1, "Abdulvosid Foziljonov", "+998945666964", 19));
-persons.Add(2, new Person(2, "Muhammadkarim Xolmatov", "+998909000990", 23));
+//persons.Add(1, new Person(1, "Abdulvosid Foziljonov", "+998945666964", 19));
+//persons.Add(2, new Person(2, "Muhammadkarim Xolmatov", "+998909000990", 23));
 
-foreach(var person in persons)
-    Console.WriteLine(person.Value);
+//foreach(var person in persons)
+//    Console.WriteLine(person.Value);
 
 
 
-public class Person
+//public class Person
+//{
+//    public int Id { get; set; }
+//    public string Name { get; set; }
+//    public string PhoneNumber { get; set; }
+//    public int Age { get; set; }
+
+//    public Person(
+//        int id,
+//        string name,
+//        string phone,
+//        int age)
+//    {
+//        Id = id;
+//        Name = name;
+//        PhoneNumber = phone;
+//        Age = age;
+//    }
+
+//    public override string ToString()
+//    {
+//        return $"Id: {Id}, Name: {Name}, Phone number: {PhoneNumber}, Age: {Age}";
+//    }
+//}
+
+
+
+
+//Task
+
+//Task<int> task1 = Task.Run(() =>
+//{
+//    int n = 0;
+//    for (int i = 0; i <= 5; i++)
+//    {
+//        n += i;
+//        System.Threading.Thread.Sleep(1000); //Sleep() - to'xtatib turish uchun
+//        Console.WriteLine($"Task 1: {i}");
+//    }
+
+//    return n;
+//});
+
+//Task<int> task2 = Task.Run(() =>
+//{
+//    int n = 0;
+//    for(int i = 0; i <= 10; i++)
+//    {
+//        n += i;
+//        System.Threading.Thread.Sleep(1000);
+//        Console.WriteLine($"Task 2: {i}");
+//    }
+
+//    return n;
+//});
+
+//// WhenAll - 2 la Task ni birdaniga birdaniga ishlatib natijani qaytaradi
+////ContinueWith - keyingi taskni chaqiradi
+//Task.WhenAll(task1, task2).ContinueWith((tasks) =>   
+//{
+//    Console.WriteLine("Tugadi!");
+//});
+
+
+//Thread
+
+
+Thread thread = new Thread(DoWork);
+thread.Start();
+
+Task task = Task.Run(() => DoWork());
+
+Console.WriteLine("Thread kutilmoqda...");
+thread.Join();
+
+Console.WriteLine("Task kutilmoqda...");
+task.Wait();
+
+
+static void DoWork()
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public string PhoneNumber { get; set; }
-    public int Age { get; set; }
-
-    public Person(
-        int id,
-        string name,
-        string phone,
-        int age)
+    for(int i = 0; i < 10; i++)
     {
-        Id = id;
-        Name = name;
-        PhoneNumber = phone;
-        Age = age;
-    }
-
-    public override string ToString()
-    {
-        return $"Id: {Id}, Name: {Name}, Phone number: {PhoneNumber}, Age: {Age}";
+        Console.WriteLine("{0}" + i);
+        Thread.Sleep(500);
     }
 }
 
@@ -37,6 +100,11 @@ public class Person
 
 
 
+
+
+
+
+//Delegate
 
 //MyDelegate myDelegate;
 //MyClass obj = new MyClass();
