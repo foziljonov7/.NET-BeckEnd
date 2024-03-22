@@ -75,26 +75,94 @@
 //Thread
 
 
-Thread thread = new Thread(DoWork);
-thread.Start();
+//Thread thread = new Thread(DoWork);
+//thread.Start();
 
-Task task = Task.Run(() => DoWork());
+//Task task = Task.Run(() => DoWork());
 
-Console.WriteLine("Thread kutilmoqda...");
-thread.Join();
+//Console.WriteLine("Thread kutilmoqda...");
+//thread.Join();
 
-Console.WriteLine("Task kutilmoqda...");
-task.Wait();
+//Console.WriteLine("Task kutilmoqda...");
+//task.Wait();
 
 
-static void DoWork()
+//static void DoWork()
+//{
+//    for(int i = 0; i < 10; i++)
+//    {
+//        Console.WriteLine("{0}" + i);
+//        Thread.Sleep(500);
+//    }
+//}
+
+string text1 = "Salom";
+
+IDictionary<int, string> dt = new Dictionary<int, string>();
+
+Console.WriteLine("Malumotlar dictionary yozilmoqda...");
+for (int i = 0; i < 5; i++)
 {
-    for(int i = 0; i < 10; i++)
-    {
-        Console.WriteLine("{0}" + i);
-        Thread.Sleep(500);
-    }
+    if(i == 3)
+        text1 = "Hi";
+
+    dt.Add(i, text1);
 }
+
+Console.WriteLine("Malumotlar qidirilmoqda...");
+Task task = Task.Run(async () =>
+{
+    var res = await GetDtKeysAsync("Hi", dt);
+    foreach(var k in res)
+        Console.WriteLine(k);
+});
+
+task.Wait();
+Console.WriteLine("Topilgan barcha malumotlar!");
+static async Task<IDictionary<int, string>> GetDtKeysAsync(string T1, IDictionary<int, string> dt)
+{
+    await Task.Delay(100);
+
+    IDictionary<int, string> dt2 = new Dictionary<int, string>();
+    foreach (var key in dt)
+        if (key.Value == T1)
+            dt2.Add(key.Key, key.Value);
+
+    return dt2;
+}
+
+
+
+//public delegate Task<int> MyDelegate(int n);
+
+//public class Program
+//{
+//    public static async Task Main()
+//    {
+//        Task task = Task.Run(async () =>
+//        {
+//            MyDelegate myDelegate;  
+//            MyMath math = new MyMath();
+
+//            myDelegate = math.MathAsync;
+//            Console.WriteLine(await myDelegate(5));
+
+//            myDelegate = math.Math2Async;
+//            Console.WriteLine(await myDelegate(3));
+//        });
+
+//        task.Wait();
+//    }
+//}
+
+//public class MyMath
+//{
+//    public async Task<int> MathAsync(int n)
+//        => await Task.FromResult(n * n);
+
+//    public async Task<int> Math2Async(int n)
+//        => await Task.FromResult((n * n) * 2);
+//}
 
 
 
